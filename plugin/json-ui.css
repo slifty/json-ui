@@ -1,0 +1,74 @@
+.json-ui-form {
+	width: 400px;
+}
+
+.json-ui-form fieldset {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.json-ui-form fieldset.array>fieldset {
+}
+
+.json-ui-form>form>fieldset {
+	border: 2px solid #2c3e50;
+}
+.json-ui-form fieldset fieldset.array {
+	border: 1px solid #888;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.json-ui-form fieldset.object {
+	border: 0px solid #2c3e50;
+	padding: 10px 10px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	border-bottom: 1px dashed #2c3e50;
+}
+
+.json-ui-form fieldset.object:nth-child(odd) {
+	background: #ffdfdf;
+}
+.json-ui-form fieldset.object:nth-child(even) {
+	background: #dfdfff;
+}
+
+.json-ui-form fieldset.primitive {
+	margin: 5px 0px;
+	padding: 5px;
+}
+
+.json-ui-form .object-label {
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 5px;
+	height: 20px;
+}
+.json-ui-form fieldset { position: relative; }
+.json-ui-form legend {
+	width: auto;
+	margin-bottom: 0px;
+	font-size: 16px;
+	border: 0px;
+}
+.json-ui-form label {
+	display: block;
+	float: left;
+	width: 20%;
+}
+.json-ui-form input { width: 80%; }
+.json-ui-form button.replicate-button {
+	width: 100%;
+	cursor: pointer;
+}
+.json-ui-form button.delete-button {
+	cursor: pointer;
+}
+.json-ui-form fieldset.array>fieldset.object>button.delete-button {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+    <script src="plugin/json-ui.jquery.js"></script>
+
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+    <link href="plugin/json-ui.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <textarea id="demo">[{"start":25.8,"end":36.5,"link":"http://www.factcheck.org/2016/04/trumps-foreign-policy-speech/","topics":["Iraq War"]},{"start":25.8,"end":36.5,"link":"http://www.politifact.com/truth-o-meter/statements/2016/apr/27/donald-trump/donald-trump-iraq-war-destabilize/","topics":["Foreign Policy","Iraq"]},{"start":290,"end":312,"link":"http://www.factcheck.org/2016/04/trumps-foreign-policy-speech/","topics":["NAFTA","Trade","Jobs"]}]</textarea>
+
+    <script type="text/javascript">
+      // Run the form editor on fields that contain json
+      $(function() {
+        $("#demo").jsonFormEditor("init");
+      });
+
+    </script>
+  </body>
+</html>
