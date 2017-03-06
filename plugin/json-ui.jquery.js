@@ -27,7 +27,9 @@
           var $children = $fieldset.children("fieldset");
           $children.each(function(index, fieldset) {
             var $fieldset = $(fieldset);
-            jsonObject.push(dataFromFieldset($fieldset));
+            var value = dataFromFieldset($fieldset);
+            if(value !== "" && value !== null)
+              jsonObject.push(dataFromFieldset($fieldset));
           });
 
           break;
@@ -71,6 +73,12 @@
       }
 
       var replicate = null;
+
+      // If this is an empty array, we need it to have SOME value
+      if(arr.length == 0) {
+        arr = [""];
+      }
+
       for(var x in arr) {
         var item = arr[x];
         if((!!item) && (item.constructor === Object)) {
